@@ -1,0 +1,74 @@
+body {
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	background-color: blue;
+	margin: 0 auto;
+	width: 750px;
+	height: 750px;
+	position: relative;
+	border: 1px solid #111;
+	overflow: hidden;
+}
+.container div {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: yellow;
+	box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.6);
+	position: absolute;
+	animation: moveX 2s linear infinite alternate,
+		moveY 1.5s ease-in infinite alternate;
+}
+
+@keyframes moveX {
+	0% {
+		left: 0;
+		height: 60px;
+		width: 40px;
+	}
+	1% {
+		height: 55px;
+		width: 45px;
+	}
+	2% {
+		height: 50px;
+		width: 50px;
+	}
+	98% {
+		height: 50px;
+		width: 50px;
+	}
+	99% {
+		height: 55px;
+		width: 45px;
+	}
+	100% {
+		height: 60px;
+		width: 40px;
+		left: 710px;
+	}
+}
+
+@keyframes moveY {
+	0% {
+		top: 0;
+	}
+	98% {
+		height: 50px;
+		width: 50px;
+	}
+	99% {
+		height: 45px;
+		width: 55px;
+	}
+	100% {
+		height: 40px;
+		width: 60px;
+		top: 710px;
+	}
+}

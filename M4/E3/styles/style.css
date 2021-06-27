@@ -1,0 +1,93 @@
+.container {
+	display: flex;
+	height: 100vh;
+	width: auto;
+	font-family: 'Lato';
+	text-rendering: geometricPrecision;
+	font-size: 4em;
+	font-weight: 500;
+	position: relative;
+}
+div div {
+	display: flex;
+	width: 20vw;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	position: absolute;
+	height: 100vh;
+}
+div div:before{
+   content: "";
+   position: absolute;
+   z-index: 1;
+   width: 20vw;
+   overflow: hidden;
+   cursor: pointer;
+   background-color: #fff;
+   height: 100vh;
+   opacity: 0.05;
+   transform: skew(30deg) scale(1);
+   transition: all 0.7s;
+
+}
+div div:hover:before{
+   transform: skew(0deg) scale(1);
+   opacity: 0.1;
+   transition: all 0.7s;
+}
+.col01 {
+	background-color: #244f75;
+	animation: col01 0.5s ease-out ;
+	left: 0vw;
+}
+.col02 {
+	background-color: #60bfbf;
+	animation: col02 0.5s ease-out 0.15s;
+	left: 20vw;
+	top: 0;
+}
+.col03 {
+	background-color: #8c4b7e;
+	animation: col03 0.5s ease-out 0.3s;
+	left: 40vw;
+	top: 0;
+}
+.col04 {
+	background-color: #f8bb44;
+	animation: col04 0.5s ease-out 0.45s;
+	left: 60vw;
+	top: 0;
+}
+.col05 {
+	background-color: #f24b4b;
+	animation: col05 0.5s ease-out 0.6s;
+	left: 80vw;
+}
+
+@keyframes col01 {
+	from {
+		left: -20vw;
+	} 
+
+}
+@keyframes col02 {
+	from {
+		top: 100vh;
+	}
+}
+@keyframes col03 {
+	from {
+		top: -100vh;
+	}
+}
+@keyframes col04 {
+	from {
+		top: 100vh;
+	}
+}
+@keyframes col05 {
+	from {
+		left: 120vw;
+	}
+}
