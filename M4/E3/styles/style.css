@@ -8,7 +8,7 @@
 	font-weight: 500;
 	position: relative;
 }
-div div {
+.columna {
 	display: flex;
 	width: 20vw;
 	align-items: center;
@@ -16,29 +16,29 @@ div div {
 	color: white;
 	position: absolute;
 	height: 100vh;
+	overflow: hidden;
 }
-div div:before{
-   content: "";
-   position: absolute;
-   z-index: 1;
-   width: 20vw;
-   overflow: hidden;
-   cursor: pointer;
-   background-color: #fff;
-   height: 100vh;
-   opacity: 0.05;
-   transform: skew(30deg) scale(1);
-   transition: all 0.7s;
-
+.columna:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	width: 20vw;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #fff;
+	height: 100vh;
+	opacity: 0.05;
+	transform: skew(30deg) scale(1);
+	transition: all 0.7s;
 }
-div div:hover:before{
-   transform: skew(0deg) scale(1);
-   opacity: 0.1;
-   transition: all 0.7s;
+.columna:hover:before {
+	transform: skew(0deg) scale(1);
+	opacity: 0.1;
+	transition: all 0.7s;
 }
 .col01 {
 	background-color: #244f75;
-	animation: col01 0.5s ease-out ;
+	animation: col01 0.5s ease-out;
 	left: 0vw;
 }
 .col02 {
@@ -68,8 +68,7 @@ div div:hover:before{
 @keyframes col01 {
 	from {
 		left: -20vw;
-	} 
-
+	}
 }
 @keyframes col02 {
 	from {
