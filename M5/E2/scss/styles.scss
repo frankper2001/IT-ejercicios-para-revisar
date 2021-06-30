@@ -9,7 +9,8 @@ $DE: #f8bb44;
 $MY: #f24b4b;
 $alto-viewport: 100vh;
 $ancho-viewport: 100vw;
-
+$transform-before: skew(30deg) scaleY(1) translate(0, 0);
+$transform-hover-before: skew(0deg) scaleX(2) translate(0, 0);
 //MIXINS
 @mixin strip{
 	overflow: hidden;
@@ -72,14 +73,14 @@ h1 {
 		opacity: 0.05;
 		-webkit-transform-origin: center center;
 		transform-origin: center center;
-		-webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
-		transform: skew(30deg) scaleY(1) translate(0, 0);
+		-webkit-transform: $transform-before;
+		transform: $transform-before;
 		transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 		overflow: hidden;
 	}
 	.strip_content:hover:before {
-		-webkit-transform: skew(0deg) scaleX(2) translate(0, 0);
-		transform: skew(0deg) scaleX(2) translate(0, 0);
+		-webkit-transform: $transform-hover-before;
+		transform: $transform-hover-before;
 		opacity: 0.2;
 	}
 }
