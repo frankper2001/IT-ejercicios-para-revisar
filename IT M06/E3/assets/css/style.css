@@ -213,7 +213,7 @@ p {
 }
 
 #header .logo img {
-	max-height: 40px;
+	max-height: 60px;
 }
 
 @media (max-width: 992px) {
@@ -444,7 +444,7 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-	background: url('../img/home-bg.jpg') repeat scroll 50% 30%/cover;
+	background: url('../img/home-bg.jpg') repeat scroll 50% 30% / cover;
 	height: 100vh;
 	width: 100%;
 }
@@ -455,7 +455,7 @@ p {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-  text-align: center;
+	text-align: center;
 	flex-direction: column;
 }
 
@@ -464,7 +464,7 @@ p {
 	font-weight: 700;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	color: #FFF;
+	color: #fff;
 }
 
 .hero-content p {
