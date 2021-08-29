@@ -1,20 +1,17 @@
-/* 
-console.log("E1:");
+console.log('E1:');
 console.log('Hola mundo');
 
 alert('E2: !Hola, me llamo frank!');
 
-console.log("E3:");
+console.log('E3:');
 let nombre = 'francisco';
 let apellido = 'perez';
 console.log(nombre + ' ' + apellido);
 
-console.log("E4:");
+console.log('E4:');
 let num1 = 25;
 let num2 = 60;
-console.log(
-	'La suma entre ' + num1 + ' y ' + num2 + ' es ' + (num1 + num2)
-);
+console.log('La suma entre ' + num1 + ' y ' + num2 + ' es ' + (num1 + num2));
 
 let nota_examen = 4.6;
 if (nota_examen >= 5) {
@@ -22,7 +19,7 @@ if (nota_examen >= 5) {
 } else {
 	alert('E5: Has suspendido el examen con ' + nota_examen);
 }
-console.log("E6:");
+console.log('E6:');
 let oracion1 = 'tengo un coche de color verde';
 console.log(oracion1);
 let oracion2 = oracion1.replace('verde', 'azul');
@@ -35,7 +32,7 @@ console.log('E7:');
 for (let index = 0; index < lista1.length; index++) {
 	const element = lista1[index];
 	console.log('El objeto ' + element + ' está en la posición ' + index + '.');
-} 
+}
 
 function calculadora(operador, valor1, valor2) {
 	let resultado = 0;
@@ -49,7 +46,7 @@ function calculadora(operador, valor1, valor2) {
 		return 'Los parametros no son correctos';
 	}
 }
-console.log("E8:");
+console.log('E8:');
 resultado = calculadora('sumar', 4, 7);
 console.log(resultado);
 
@@ -71,7 +68,6 @@ function calculadora(operador, valor1, valor2) {
 		return 'Los parametros no son correctos';
 	}
 }
-console.log("N2:");
+console.log('N2:');
 resultado = calculadora('dividir', 4, 0);
 console.log(resultado);
-*/
